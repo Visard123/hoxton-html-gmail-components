@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width:100%;
+}
+.container{
+    margin: px;
+    display: grid;
+    grid-template:
+      'header      header    header          header '     auto
+      'left-menu   main      right-menu    side-menu'    1fr 
+      'bottom-menu  main     right-menu    side-menu'   1fr /
+       100px        1fr      120px          50px;
+
+      height: 100vh;
+      width: 100vw;
+}
+.header {
+text-align: center;
+    grid-area: header;
+   /* border: 2px solid black;*/
+    grid-template-columns: 130px 5fr 150px;
+    background-color:rgb(167, 151, 151);
+  }
+  .header .left-items{
+    display: grid;
+    grid-template-columns: 30px 80px;
+    align-items: center;
+    padding: 5px;
+}
+
+  .header .hamburger-icon {
+      padding: 0px;
+    justify-content:center;
+    align-items: center;
+    
+  }
+  .header .gmail-logo{
+    padding: 0px;
+    justify-content:center;
+    align-items: center;
+   
+  }
+  .header .middle-item input{
+    border-radius: 7px;
+    background-color: #f0f3f4;
+    border: none;
+    font-size: 16px;
+    padding: 5px 10px; 
+    width: 600px; 
+    height: 50px;
+    align-items: center;
+    
+  }
+
+  .header .right-items{
+    display: grid;
+    grid-template-columns: repeat(3, 25px) 8px;
+    align-items: center;
+    justify-content: end;
+    grid-gap: 5px;
+    padding-right: 80px;
+
+  }
+  .header .right-items .account-icon img{
+      height: 100px;
+      width: 100px;
+  }
+   }
+  .left-menu{
+    grid-area:left-menu;
+    border: 2px solid black;
+    background-color: chartreuse;
+ }
+ 
+ .main {
+     text-align: center;
+    grid-area: main;
+    display: grid;
+    border: 2px solid black;
+    background-color: cyan;
+ }
+ .item {
+     display: grid;
+
+ }
+ .right-menu {
+    grid-area:right-menu ;
+    border: 2px solid black;
+    background-color:darkorange;
+ }
+ 
+.bottom-menu{
+    grid-area: bottom-menu;
+    border: 2px solid black;
+    background-color: rgb(255, 0, 55);  
+}
+ .side-menu{
+    grid-area: side-menu;
+    border: 2px solid black;
+    background-color: rgb(94, 255, 0);  
+
+ }
+    
+   
